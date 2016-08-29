@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 body {
     width:100%;
     font-size: 1.15em;
@@ -8,6 +6,7 @@ body {
 h1 {
     font-size: 2em;
     text-shadow:2px 2px 2px #000;
+    text-align: center;
 }
 
 html {
@@ -16,12 +15,26 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: transparent;
+    background-color: #CB1E3C;
+    border-left: 1px solid #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #F96F6E;
 }
 
 a {
@@ -110,21 +123,19 @@ a {
     background:#F96F6E;
     background: -webkit-linear-gradient(left top,#C81E3C, #F96F6E);
     color:white;
-    font-family: Fjalla+One;
     padding: 2em 2em 4em 2em;
     width: 100%;
     margin-top: 0;
-    text-align: center;
+    text-align: left;
     font-family: ubuntu;
 }
 
 .projects {
     background-image:url(background.jpg);
     color:black;
-    font-family: Fjalla+One;
     padding: 2em 2em 4em 2em;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: ubuntu;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
 }
@@ -133,10 +144,9 @@ a {
     background:#F96F6E;
     background: -webkit-linear-gradient(left top,#C81E3C, #F96F6E);
     color:white;
-    font-family: Fjalla+One;
     padding: 2em 2em 4em 2em;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: ubuntu;
     box-shadow: 0 -10px 0 -5px rgba(250,110,110,.4),0 -20px 0 -10px rgba(250,110,110,.2);
 }
@@ -157,21 +167,19 @@ a {
     background:#F96F6E;
     background: -webkit-linear-gradient(left top,#C81E3C, #F96F6E);
     color:white;
-    font-family: Fjalla+One;
-    padding: 2em 7em 4em 7em;
+    padding: 4em 10em 6em 10em;
     width: 100%;
     margin-top: 0;
-    text-align: center;
+    text-align: left;
     font-family: ubuntu;
 }
 
 .projects {
     background-image:url(background.jpg);
     color:black;
-    font-family: Fjalla+One;
-    padding: 2em 7em 4em 7em;
+    padding: 4em 10em 6em 10em;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: ubuntu;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
 }
@@ -180,17 +188,16 @@ a {
     background:#F96F6E;
     background: -webkit-linear-gradient(left top,#C81E3C, #F96F6E);
     color:white;
-    font-family: Fjalla+One;
-    padding: 2em 7em 4em 7em;
+    padding: 4em 10em 6em 10em;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: ubuntu;
     box-shadow: 0 -10px 0 -5px rgba(250,110,110,.4),0 -20px 0 -10px rgba(250,110,110,.2);
 }
 
 .contact {
     background-image:url(background.jpg);
-    padding: 2em 17em 2em 17em;
+    padding: 3.5em 17em 4em 17em;
     width: 100%;
     text-align: center;
     font-family: ubuntu;
