@@ -255,7 +255,8 @@ a {
     padding: 0.8em 5em 0.8em 0;
     text-align: right;
     font-size:18px;
-    color:#eee;
+    color:var(SecondColor);
+    color:var(--second-color);
     font-family: dosis;
     background-color:#555;
     width:100%;
