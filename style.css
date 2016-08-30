@@ -421,12 +421,11 @@ a {
     height:auto;
     border-top-left-radius:  10%;
     border-top-right-radius: 10%;
+    -webkit-filter: grayscale(85%);
 }
     
-.image:hover {
-    padding: 0 1vw 3vw 1vw;
-    display: inline-block;
-    background-color: rgba(255,255,255,0.1);
+.polaroid img:hover {
+    -webkit-filter: grayscale(0%);
 }
     
 }
