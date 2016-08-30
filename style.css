@@ -224,7 +224,7 @@ a {
     width: 100%;
     margin-top: 0;
     text-align: left;
-    font-family: ruluko;
+    font-family: raleway;
 }
 
 .projects {
@@ -232,8 +232,8 @@ a {
     color:black;
     padding: 2em 5vw 4em 5vw;
     width: 100%;
-    text-align: left;
-    font-family: ruluko;
+    text-align: justify;
+    font-family: raleway;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
 }
 
@@ -247,7 +247,7 @@ a {
     padding: 2em 2vw 4em 2vw;
     width: 100%;
     text-align: center;
-    font-family: ruluko;
+    font-family: raleway;
 }
 
 .contact {
@@ -255,7 +255,7 @@ a {
     padding: 3.5em 7vw 4em 7vw;
     width: 100%;
     text-align: center;
-    font-family: ruluko;
+    font-family: raleway;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
 }
 
@@ -428,4 +428,10 @@ a {
     -webkit-filter: grayscale(0%);
 }
     
+}
+
+.project-title {
+    font-size:2em;
+    text-align: left;
+    font-weight: 200;
 }
