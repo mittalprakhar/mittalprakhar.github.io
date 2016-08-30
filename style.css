@@ -231,7 +231,7 @@ a {
     padding: 2em 5vw 4em 5vw;
     width: 100%;
     margin-top: 0;
-    text-align: left;
+    text-align: justify;
     font-family: raleway;
 }
 
@@ -442,4 +442,22 @@ a {
     font-size:2em;
     text-align: left;
     font-weight: 200;
+}
+
+.profile img {
+    width:20vw;
+    height:20vw;
+    float:left;
+    margin-right:6vw;
+    margin-top:2vw;
+    box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
+    border-radius:50%;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-filter: brightness(155%);
+}
+
+.profile img:hover {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
