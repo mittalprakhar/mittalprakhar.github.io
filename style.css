@@ -3,14 +3,13 @@
     --second-color:#4A235A;
 }
 
-/*@keyframes navigation {
+@keyframes navigation {
     0%   {background-color: #E74C3C;}
     25%  {background-color: #D4AC0D;}
     50%  {background-color: #2874A6;}
     75%  {background-color: #239B56;}
     100% {background-color: #E74C3C;}
 }
-*/
 
 @keyframes navigation {
     from   {background-image: url(bg.jpeg);background-size: 150vw;background-blend-mode: lighten;}
