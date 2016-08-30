@@ -12,11 +12,14 @@
 }
 
 @keyframes navigation {
-    from   {background-image: url(bg.jpeg);background-size: 150vw;background-blend-mode: lighten;}
-    to  {background-image: url(bg.jpeg);background-size: 150vw;}
+    from   {
+        background-image: url(bg.jpeg);
+        background-blend-mode: lighten;
+    }
+    to  {
+        background-image: url(bg.jpeg);
+    }
 }
-
-
 
 @keyframes div {
     0%   {background: -webkit-linear-gradient(left top, #E74C3C, #F1948A);}
@@ -135,6 +138,7 @@ html {
 a {
     text-decoration: none;
 }
+
 .navigation {
     list-style: none;
     background: #000;
