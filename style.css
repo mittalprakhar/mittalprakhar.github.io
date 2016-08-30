@@ -1,8 +1,8 @@
 :root{
-    var-MainColor:#CB1E3C;
-    --main-color: #CB1E3C;
-    var-SecondColor:#F96F6E;
-    --second-color:#F96F6E;
+    var-MainColor:#000;
+    --main-color: #000;
+    var-SecondColor:#4A235A;
+    --second-color:#4A235A;
 }
 
 body {
