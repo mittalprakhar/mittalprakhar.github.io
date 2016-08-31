@@ -30,10 +30,10 @@
 
 @keyframes navigation {
     from {
-        background-image: url(files/bg.jpg);
+        background-image: url(bg.jpg);
     }
     to {
-        background-image: url(files/bg.jpg);
+        background-image: url(bg.jpg);
     }
 }
 
@@ -551,7 +551,7 @@ h2 {
     position:absolute;
     left:50%;
     top:50%;
-    background-image:url(files/status.gif);
+    background-image:url(status.gif);
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px;
