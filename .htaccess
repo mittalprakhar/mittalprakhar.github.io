@@ -7,4 +7,7 @@ ExpiresByType image/png "access 1 month"
 ExpiresByType text/css "access 1 day"
 ExpiresByType text/html "access 1 day"
 ExpiresDefault "access 1 month"
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
 </IfModule>
