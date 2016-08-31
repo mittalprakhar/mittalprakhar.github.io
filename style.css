@@ -37,6 +37,34 @@
     }
 }
 
+@media all and (max-device-width:600px) {
+    @keyframes navigation {
+        0%   {
+            background-image: none;
+            background-color: rgba(231,76,60,1);
+        }
+        25%  {
+            background-image: none;
+            background-color: rgba(212,172,13,1);
+        }
+        50%  {
+            background-image: none;
+            background-color: rgba(40,116,166,1);
+        }
+        75%  {
+            background-image: none;
+            background-color: rgba(35,155,86,1);
+        }
+        100% {
+            background-image: none;
+            background-color: rgba(231,76,60,1);
+        }
+    }
+}
+    
+
+
+
 html {
     overflow: scroll;
     overflow-x: hidden;
