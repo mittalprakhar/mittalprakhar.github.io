@@ -3,32 +3,37 @@
     --second-color:#4A235A;
 }
 
-@keyframes navigation {
-    0%   {background-color: #E74C3C;}
-    25%  {background-color: #D4AC0D;}
-    50%  {background-color: #2874A6;}
-    75%  {background-color: #239B56;}
-    100% {background-color: #E74C3C;}
-}
-
-@keyframes navigation {
-    from   {
-        background-image: url(bg.jpeg);
-        background-blend-mode: lighten;
+@keyframes whitebg {
+    0%   {
+        background-image: none;
+        background-color: rgba(231,76,60,0.1);
     }
-    to  {
-        background-image: url(bg.jpeg);
+    25%  {
+        background-image: none;
+        background-color: rgba(212,172,13,0.2);
+    }
+    50%  {
+        background-image: none;
+        background-color: rgba(40,116,166,0.1);
+    }
+    75%  {
+        background-image: none;
+        background-color: rgba(35,155,86,0.2);
+    }
+    100% {
+        background-image: none;
+        background-color: rgba(231,76,60,0.1);
     }
 }
 
-@keyframes div {
-    0%   {background: -webkit-linear-gradient(left top, #E74C3C, #F1948A);}
-    25%  {background: -webkit-linear-gradient(left top, #D4AC0D, #F4D03F);}
-    50%  {background: -webkit-linear-gradient(left top, #2874A6, #5DADE2);}
-    75%  {background: -webkit-linear-gradient(left top, #239B56, #82E0AA);}
-    100% {background: -webkit-linear-gradient(left top, #E74C3C, #F1948A);}
+@keyframes navigation {
+    from {
+        background-image: url(bg.jpg);
+    }
+    to {
+        background-image: url(bg.jpg);
+    }
 }
-
 body {
     width:100%;
     font-size: 1.2em;
@@ -107,7 +112,6 @@ h2 {
 }
 }
 
-
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -122,8 +126,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-image: url(bg.jpeg);
-    background: #aaa;
+    background: rgb(0,68,76);
     border-left: 1px solid #fff;
     -webkit-border-radius: 10px;
     border-radius: 0%;
@@ -131,13 +134,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #4A235A;
-    background-color: var(--second-color);    
+    background-color: rgb(76,96,84);
 }
 
 a {
     text-decoration: none;
 }
+
 
 .navigation {
     list-style: none;
@@ -152,6 +155,7 @@ a {
     position:fixed;
     width:100%;      
     height:9%;
+    min-height: 50px;
     margin-top:-8px;
     margin-left:-8px;
     border-top: 0.1vw solid #000;
@@ -168,6 +172,21 @@ a {
 
 .navigation a:hover {
     background: darken(deepskyblue, 2%);
+}
+    
+.footer {
+    padding: 0.8em 5vw 0.8em 0;
+    text-align: right;
+    font-size:20px;
+    color:#fff;
+    font-family: dosis;
+    background-color: #000;
+    animation-name: navigation;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    width:100%;
+    height:40%;
+    min-height: 30px;
 }
 
 @media all and (max-width: 800px) {
@@ -237,6 +256,9 @@ a {
 
 .projects {
     background-image:url(background.jpg);
+    animation-name: whitebg;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
     color:black;
     padding: 2em 5vw 4em 5vw;
     width: 100%;
@@ -260,25 +282,14 @@ a {
 
 .contact {
     background-image:url(background.jpg);
+    animation-name: whitebg;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
     padding: 3.5em 7vw 4em 7vw;
     width: 100%;
     text-align: center;
     font-family: raleway;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
-}
-
-.footer {
-    padding: 0.8em 5vw 0.8em 0;
-    text-align: right;
-    font-size:20px;
-    color:#fff;
-    font-family: dosis;
-    background-color: #000;
-    animation-name: navigation;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
-    width:100%;
-    height:40%;
 }
 
 @media screen and (min-width:1px) and (max-width:500px) {  
@@ -374,6 +385,61 @@ a {
     color: --main-color;
 }
 
+.project-title {
+    font-size:2em;
+    text-align: left;
+    font-weight: 200;
+}
+
+.profile img {
+    width:20vw;
+    height:20vw;
+    float:left;
+    margin-right:6vw;
+    margin-top:2vw;
+    box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
+    border-radius:50%;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-filter: brightness(155%);
+}
+
+.profile img:hover {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+#iframe {
+    width:32vw;
+    height:18vw;
+    float:left;
+    margin-right:2vw;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+}
+
+#iframe:hover {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);  
+}
+
+#pirates:hover {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);  
+}
+
+#pirates {
+    width:30vw;
+    height:17vw;
+    float:right;
+    margin-left:2vw;
+    margin-top:2vw;
+    box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-filter: brightness(135%);
+}
+
 @media all and (max-width:700px) {
 .image {
     padding: 0 15vw 8vw 15vw;
@@ -400,7 +466,33 @@ a {
     height:auto;
     border-top-left-radius:  10%;
     border-top-right-radius: 10%;
-}   
+}
+
+.projects {
+    text-align: left;
+}
+    
+.profile {
+    text-align:left;
+}
+    
+.profile img {
+    width:40vw;
+    height:40vw;
+}
+    
+#iframe {
+    width:70vw;
+    height:36vw;
+    float:none;
+    display:block;
+    margin: inherit 15vw 30vw 15vw;
+}
+    
+#pirates {
+    visibility:none;
+    opacity:0;
+}
 }
 
 @media all and (min-width:701px) {  
@@ -434,30 +526,8 @@ a {
     
 .polaroid img:hover {
     -webkit-filter: grayscale(0%);
+    -webkit-filter: brightness(135%);
 }
     
 }
 
-.project-title {
-    font-size:2em;
-    text-align: left;
-    font-weight: 200;
-}
-
-.profile img {
-    width:20vw;
-    height:20vw;
-    float:left;
-    margin-right:6vw;
-    margin-top:2vw;
-    box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
-    border-radius:50%;
-    -webkit-transition: -webkit-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out;
-    -webkit-filter: brightness(155%);
-}
-
-.profile img:hover {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-}
