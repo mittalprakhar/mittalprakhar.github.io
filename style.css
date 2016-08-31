@@ -61,12 +61,9 @@
         }
     }
 }
-    
-
-
 
 html {
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -554,3 +551,28 @@ h2 {
     min-height: 30px;
 }
 
+#image {
+    position:absolute;
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff;
+    z-index:99;
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    background-image:url(files/status.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px;
+}
