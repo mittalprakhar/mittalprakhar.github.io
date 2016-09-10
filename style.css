@@ -5,8 +5,6 @@
     --main-font: quicksand;
 }
 
-@import compass;
-
 @keyframes whitebg {
     0%   {
         background-image: none;
