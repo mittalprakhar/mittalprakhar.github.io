@@ -461,7 +461,7 @@ h2 {
 }
 
 .small-icon, .hangouts {
-    padding:0 0.8em 0 0.8sem;
+    padding:0 0.8em 0 0.8em;
     -webkit-transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out
 }
