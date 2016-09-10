@@ -6,35 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="icon" type="image/png" href="favicon.png">
-        
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Dosis|Ruluko|Quicksand" rel="stylesheet">
         
-        <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="adjector.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".contain .adject").adjector({
-                    sep: ",",
-                    stay: 1200,
-                    trans: 800,
-                    arm: -150
-                });
-            });
-        </script>
-        <script type="text/javascript">
-        $(window).load(function() {
-            $('#status').delay(2500).fadeOut('slow');
-            $('#preloader').delay(2500).fadeOut('slow');
-        })
-        </script>
+        <!--<script type="text/javascript" src="jquery.js"></script> -->
     </head>
     
     
     <body>
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>
 
         <ul class="navigation">
             <li><a href="#profile">Profile</a></li>
@@ -51,7 +30,7 @@
                 <div class="contain">
                     <h2>
                         <span class="adject" style="font-family:quicksand,ubuntu,serif;">
-                            WELCOME, BIENVENUE, BIENVENIDOS, BEMVINDO, WILLKOMMEN
+                            Welcome
                         </span>
                     </h2>
                 </div>
@@ -60,7 +39,7 @@
             <a name="profile"></a>
             <li class="profile">
                 <h1> PROFILE </h1><br>
-                <img src="dp.jpg">
+                <img src="dp.jpg" id="dp">
                 <div id="profile-text">
                     Hello! I am Prakhar Mittal, I was born in a small town called Saharanpur in India, on 26th May 2002; and as you
                     might guess- I am 14 years old. I attend Delhi Public School, in Gurgaon, where I am living since the past eight
@@ -219,6 +198,24 @@
             
             <li class="footer">&copy; Prakhar Mittal, 2016</li>
         </ul>
+        
+        <!--<script>
+         $('.media').fadeOut(0);
+         $('.projects').fadeOut(0);
+         $(document).scroll(function() {
+             var y = $(this).scrollTop();
+             if (y > 550) {
+                 $('.projects').fadeIn(750);
+             } 
+         });
+            
+        $(document).scroll(function() {
+             var y = $(this).scrollTop();
+             if (y > 2000) {
+                 $('.media').fadeIn(750);
+             } 
+         });
+      </script>-->
         
     </body>
     
