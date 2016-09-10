@@ -7,69 +7,54 @@
 
 @keyframes whitebg {
     0%   {
-        background-image: none;
         background-color: rgba(231,76,60,0.1);
     }
     25%  {
-        background-image: none;
         background-color: rgba(212,172,13,0.2);
     }
     50%  {
-        background-image: none;
         background-color: rgba(40,116,166,0.1);
     }
     75%  {
-        background-image: none;
         background-color: rgba(35,155,86,0.2);
     }
     100% {
-        background-image: none;
         background-color: rgba(231,76,60,0.1);
     }
 }
 
 @keyframes profile {
     0%   {
-        background-image: none;
         background-color: rgb(40,116,166);
     }
     25%  {
-        background-image: none;
         background-color: rgb(35,155,86);
     }
     50%  {
-        background-image: none;
         background-color: rgb(215,161,51);
     }
     75%  {
-        background-image: none;
         background-color: rgb(203,0,58);
     }
     100% {
-        background-image: none;
         background-color: rgb(40,116,166);
     }
 }
 
 @keyframes media {
     0%   {
-        background-image: none;
         background-color: rgb(203,0,58);
     }
     25%  {
-        background-image: none;
         background-color: rgb(40,116,166);
     }
     50%  {
-        background-image: none;
         background-color: rgb(35,155,86);  
     }
     75%  {
-        background-image: none;
         background-color: rgb(215,161,51); 
     }
     100% {
-        background-image: none;
         background-color: rgb(203,0,58);
     }
 }
