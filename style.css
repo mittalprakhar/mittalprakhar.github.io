@@ -111,10 +111,14 @@ h2 {
 
 .navigation a {
     text-decoration: none;
-    padding: 0.8em;
+    padding: 0.8em 2vw 0.8em 2vw;
     color: white;
     float: left;
     font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #00bfff;
 }
     
 @media all and (max-width: 800px) {
@@ -129,14 +133,11 @@ h2 {
         flex-flow: column wrap;
         padding: 0;
     }
-  
-    .navigation a { 
-        text-align: center; 
-        padding: 10px;
-        border-top: 1px solid rgba(255,255,255,0.3); 
-        border-bottom: 1px solid rgba(0,0,0,0.1); 
+    
+    .navigation a {
+        padding: 0.8em 3.5vw 0.8em 3.5vw;
     }
-
+  
     .navigation li:last-of-type a {
         border-bottom: none;
     }
@@ -326,12 +327,23 @@ h2 {
     transform: rotate(-8deg);  
 }
 
+.wro2016 {
+    width: 32vw;
+    height: 22vw;
+    float:left;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+}
+
 .pirates {
     width: 30vw;
     height: 17vw;
     float: right;
     margin-left: 2vw;
     margin-top: 2vw;
+}
+
+.pirates, .wro2016, iframe {
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     -webkit-transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
@@ -341,6 +353,11 @@ h2 {
 .pirates:hover {
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);  
+}
+
+.wro2016:hover {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); 
 }
 
 @media all and (max-width:700px) {
@@ -359,6 +376,12 @@ h2 {
     .pirates {
         visibility:none;
         opacity:0;
+    }
+    
+    .wro2016 {
+        width: 64vw;
+        height: 44vw;
+        float: none;
     }
 }
 
@@ -461,9 +484,9 @@ h2 {
 }
 
 .small-icon, .hangouts {
-    padding:0 0.8em 0 0.8em;
+    padding:0 1.3vw 0 1.3vw;
     -webkit-transition: -webkit-transform .2s ease-in-out;
-    transition: transform .2s ease-in-out
+    transition: transform .2s ease-in-out;
 }
 
 .hangouts {
@@ -473,7 +496,8 @@ h2 {
 
 @media screen and (max-width:500px) {  
     .small-icon, .hangouts {
-        width: 14%;
+        width: 15%;
+        padding:0 2vw 0 2vw;
     }
 }
 
@@ -512,10 +536,18 @@ h2 {
     padding: 0.8em 5vw 0.8em 0;
     text-align: right;
     font-size: 20px;
-    color: white;
     font-family: dosis;
     background: rgba(0,0,0,0.7);
     width: 100%;
     height: 40%;
     min-height: 30px;
+}
+
+.footer a {
+    text-decoration:none;
+    color:white;
+}
+
+.footer a:hover {
+    color:#00bfff;
 }
