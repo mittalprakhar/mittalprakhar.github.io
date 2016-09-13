@@ -207,28 +207,6 @@ h2 {
     }
 }
 
-.adjecting {
-    display: inline-block;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin:50%;
-}
-
-.adjecting .front-face, .adjecting .back-face {
-    display: inline-block;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.adjecting .front-face {
-    position: absolute;
-}
-
-.adjecting .back-face {
-    position: relative;
-}
-
 .contain {
     width:inherit;
     border-top: 3px solid #4A235A;
@@ -260,8 +238,8 @@ h2 {
     width: 20vw;
     height: 20vw;
     float: left;
-    margin-right: 6vw;
-    margin-top: 2vw;
+    margin-right: 4vw;
+    margin-bottom: 2vw;
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -318,13 +296,6 @@ h2 {
     height: 18vw;
     float: left;
     margin-right: 2vw;
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-}
-
-.iframe:hover {
-    -webkit-transform: rotate(-8deg);
-    transform: rotate(-8deg);  
 }
 
 .wro2016 {
@@ -385,6 +356,9 @@ h2 {
     }
 }
 
+    .projects li {
+        list-style-type: disc;
+    }
 
 
 /* Media Div */
@@ -550,4 +524,9 @@ h2 {
 
 .footer a:hover {
     color:#00bfff;
+}
+
+.source {
+    margin-left: 4vw;
+    float: left;
 }
