@@ -117,9 +117,9 @@ h2 {
 
 @media all and (min-height:401px) and (max-height:600px) { .navigation { height: 11vh; } }
 
-@media all and (min-height:601px) and (max-height:800px) { .navigation { height: 8vh; } }
+@media all and (min-height:601px) and (max-height:1000px) { .navigation { height: 8vh; } }
 
-@media all and (min-height:801px) { .navigation {height: 8vh;} }
+@media all and (min-height:1001px) { .navigation {height: 6.5vh;} }
 
 .navigation a {
     text-decoration: none;
