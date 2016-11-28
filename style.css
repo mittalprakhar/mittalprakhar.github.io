@@ -74,6 +74,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #00bfff;
+}
+
 h1 {
     font-size: 2.3em;
     text-shadow:2px 2px 2px black;
@@ -331,6 +335,13 @@ h2 {
     transform: rotate(-10deg); 
 }
 
+@media all and (max-width:900px) {
+    .pirates {
+        width: 50vw;
+        height: 28.3vw;
+    } 
+}
+
 @media all and (max-width:700px) {
     .projects {
         text-align: left;
@@ -347,8 +358,10 @@ h2 {
     .pirates {
         visibility:none;
         opacity:0;
+        width: 0vw;
+        height: 0vw;
     }
-    
+
     .wro2016 {
         width: 64vw;
         height: 44vw;
@@ -356,10 +369,41 @@ h2 {
     }
 }
 
-    .projects li {
-        list-style-type: disc;
+.projects li {
+    list-style-type: disc;
+}
+
+@media all and (max-width:1000px) {
+    .intldiv {
+        visibility:none;
+        opacity:0;
+        width: 0vw;
+        height: 0vw;
+    }
+}
+
+@media all and (min-width:1001px) {  
+
+    .intldiv {
+        padding: 0 1vw 3vw 1vw;
+        float: right;
+        margin-top: 6vw;
+        margin-left: 3vw;
     }
 
+    .intlblock {
+        width: 40vw;
+        height: 27vw;
+        background-color: white;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .intlblock img {
+        width:40vw;
+        height:auto;
+    }
+      
+}
 
 /* Media Div */
 .media {
