@@ -331,7 +331,7 @@ h2 {
     height: 35vw;
     float: right;
     margin-left: 3vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     -webkit-transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
