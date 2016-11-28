@@ -112,7 +112,7 @@ h2 {
     border-bottom: 0.1vw solid black;
 }
 
-@media all and (min-width:800px) {
+@media all and (min-width:1000px) {
     .navigation {
         min-height: 50px;
     }
