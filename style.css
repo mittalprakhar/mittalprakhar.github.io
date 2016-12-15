@@ -66,12 +66,17 @@ html {
 
 body {
     width:100%;
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-family: quicksand, sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00bfff;
 }
 
 h1 {
@@ -93,6 +98,7 @@ h2 {
 
 /* Menu-Navigation bar */
 .navigation {
+    min-width: 200vw;
     list-style: none;
     background: rgba(0,0,0,0.7);
     font-family: dosis;
@@ -327,8 +333,8 @@ h2 {
 }
 
 .intl {
-    width: 30vw;
-    height: 35vw;
+    width: 28vw;
+    height: 32.6vw;
     float: right;
     margin-left: 3vw;
     margin-top: 1vw;
