@@ -98,7 +98,6 @@ h2 {
 
 /* Menu-Navigation bar */
 .navigation {
-    min-width: 200vw;
     list-style: none;
     background: rgba(5,5,5,5.9);
     font-family: dosis;
@@ -111,21 +110,8 @@ h2 {
     margin-left: -8px;
     border-top: 0.1vw solid black;
     border-bottom: 0.1vw solid black;
+    min-height: 40px;
 }
-
-@media all and (max-height:100px) { .navigation { height: 50vh; } }
-
-@media all and (min-height:151px) and (max-height:200px) { .navigation { height: 32vh; } }
-
-@media all and (min-height:201px) and (max-height:300px) { .navigation { height: 20vh; } }
-
-@media all and (min-height:301px) and (max-height:400px) { .navigation { height: 15vh; } }
-
-@media all and (min-height:401px) and (max-height:600px) { .navigation { height: 11vh; } }
-
-@media all and (min-height:601px) and (max-height:900px) { .navigation { height: 9vh; } }
-
-@media all and (min-height:901px) { .navigation {height: 7vh;} }
 
 .navigation a {
     text-decoration: none;
@@ -320,8 +306,9 @@ h2 {
     width: 32vw;
     height: 22vw;
     float:left;
+    margin-top: 1vw;
     margin-right: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 
 .pirates {
@@ -329,7 +316,7 @@ h2 {
     height: 17vw;
     float: right;
     margin-left: 2vw;
-    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 .intl {
@@ -337,7 +324,7 @@ h2 {
     height: 32.6vw;
     float: right;
     margin-left: 3vw;
-    margin-top: 1vw;
+    margin-bottom: 2vw;
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     -webkit-transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
@@ -407,14 +394,14 @@ h2 {
     font-family: var(--main-font);
 }
 
-@media all and (max-width:700px) {
+@media all and (max-width:800px) {
     .mediadiv {
         padding: 0 15vw 8vw 15vw;
         display: block;
     }
 
     .mediablock {
-        border-radius: 10%;
+        border-radius: 5%;
         width: 70vw;
         height: 54vw;
         background-color: white;
@@ -431,12 +418,12 @@ h2 {
     .mediablock img {
         width: 70vw;
         height: auto;
-        border-top-left-radius: 10%;
-        border-top-right-radius: 10%;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
     }
 }
 
-@media all and (min-width:701px) {  
+@media all and (min-width:801px) {  
 
     .mediadiv {
         padding: 0 1vw 3vw 1vw;
@@ -444,30 +431,29 @@ h2 {
     }
 
     .mediablock {
-        border-radius:10%;
-        width: 38vw;
-        height: 30vw;
+        border-radius:5%;
+        width: 28.5vw;
+        height: 22.5vw;
         background-color: white;
         box-shadow: 0 0.1vw 0.7vw 0 rgba(255, 255, 255, 0.2), 0 0.7vw 2vw 0 rgba(255, 255, 255, 0.19);
     }
 
     .caption {
         text-align: center;
-        padding: 1vw 0;
+        padding: 0.75vw 0;
         color: black;
-        font-size: 1.75vw;
+        font-size: 1.3125vw;
     }
     
     .mediablock img {
-        width:38vw;
+        width:28.5vw;
         height:auto;
-        border-top-left-radius:  10%;
-        border-top-right-radius: 10%;
+        border-top-left-radius:  5%;
+        border-top-right-radius: 5%;
         -webkit-filter: grayscale(85%);
     }
     
     .mediablock img:hover {
-        -webkit-filter: grayscale(0%);
         -webkit-filter: brightness(135%);
     }   
 }
