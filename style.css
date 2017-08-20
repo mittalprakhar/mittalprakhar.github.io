@@ -81,7 +81,7 @@ ul li {
 }
 
 #banner2 {
-    width:100%;
+    width:110%;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -90,7 +90,6 @@ ul li {
 }
 
 .intro-text {
-    margin-top: 50vh;
     text-align: center;
     font-size: 3.5em;
     text-transform: uppercase;
