@@ -90,6 +90,7 @@ ul li {
 }
 
 .intro-text {
+    margin-top: 50vh;
     text-align: center;
     font-size: 3.5em;
     text-transform: uppercase;
@@ -167,6 +168,7 @@ button {
     
     .intro-text {
         font-size: 2.5em;
+        margin-top: 48vh;
     }
 }
 
