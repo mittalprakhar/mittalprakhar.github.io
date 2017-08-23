@@ -9,37 +9,26 @@ p {
     padding-bottom: 10px;
 }
 
+.section {
+    padding: 0 5vw 5vw 5vw;
+}
+
 .navbar {
-    background-color: black;
+    background-color: #000;
     padding: 0 40px 0;
     font-size: 0.9em;
     text-transform: uppercase;
 }
 
-#section {
-    padding: 0 5vw 5vw 5vw;
-}
-
-@media(max-width:767px) {
-    .navbar {
-        padding: 0 10px;
-    }
-    
-    #section {
-        padding: 0;
-    }
-    
-    #galh1 {
-        margin-top: 1.5em;
-    }  
-    
-    #last {
-        margin-bottom: 3em;
-    }
-}
-
-#text {
+#nav-text {
     color: #fff;
+}
+
+.cover {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .navbar-brand {
@@ -70,23 +59,22 @@ ul li {
         padding: 0 10px;
     }
     
-    #section {
-        padding: 2vw;
-    }
-    
     .nav li {
         margin-left: 0px;
         padding: 0;
-    }    
-}
-
-#banner2 {
-    width:100%;
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-    color: #fff;
+    }
+    
+    .section {
+        padding: 2vw;
+    }
+    
+    #galh1 {
+        margin-top: 1.5em;
+    }  
+    
+    #last {
+        margin-bottom: 3em;
+    }
 }
 
 .intro-text {
@@ -100,7 +88,16 @@ ul li {
     background-color: #020d20;
 }
 
-#banner {
+.banner {
+    width:100%;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+    color: #fff;
+}
+
+.banner2 {
     width: 100%;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -112,7 +109,7 @@ ul li {
     padding-bottom: 5em;
 }
 
-#banner p {
+.banner2 p {
     font-size: 18px;
     line-height: 35px;
     text-align: center;
@@ -145,7 +142,7 @@ button {
 
 @media(max-width:650px) {
     
-    #banner {
+    .banner {
         padding: 1em 0 3em;
     }
     
@@ -191,8 +188,8 @@ button:hover {
 }
 
 .gallery {
-    border: 1px solid #ccc;
-    box-shadow: 0 0.1vw 0.7vw 0 rgba(255, 255, 255, 0.2), 0 0.7vw 2vw 0 rgba(255, 255, 255, 0.19);
+    border: 1px solid #999;
+    border-radius: 10px;
 }
 
 .gallery:hover {
@@ -203,6 +200,8 @@ button:hover {
     width: 100%;
     height: auto;
     -webkit-filter: brightness(80%);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
 
 .gallery img:hover {
@@ -213,7 +212,7 @@ button:hover {
     padding: 15px;
     text-align: center;
     font-weight: bolder;
-    color: black;
+    color: #000;
 }
 
 .responsive {
