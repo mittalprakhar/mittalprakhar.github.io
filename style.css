@@ -53,13 +53,13 @@ a.brand-logo {
 
 @media (max-width: 800px) {
     .container {
-        margin-top: 15%;
+        margin-top: 16%;
     }
 }
 
 @media (min-width: 801px) {
     .container {
-        margin-top: 8%;
+        margin-top: 10%;
     }
 }
 
