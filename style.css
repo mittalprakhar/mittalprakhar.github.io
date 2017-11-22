@@ -35,7 +35,8 @@ a.brand-logo {
     height: 90%;
     min-height: 540px;
     width: 100%;
-    background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.36),rgba(0,0,0,0.88)),url('img/2.jpg');
+    background-image:url('img/2.jpg');
+    background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.35),rgba(0,0,0,0.85)),url('img/2.jpg');
     background-position:center center;
     background-attachment: fixed;
     background-size: cover;
@@ -69,12 +70,12 @@ a.brand-logo {
 .social {
    margin: 24px 0;
    font-size: 28px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+   text-shadow: 0px 1px 2px rgba(0,0,0,.8);
 }
 
 .social li {
    display: inline-block;
-   margin: 0 15px;
+   margin: 0 12px;
 }
 
 .social li a {
@@ -94,6 +95,13 @@ a.brand-logo {
 
 .section {
     text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.journey {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 h2 {
@@ -123,31 +131,35 @@ h6 {
     text-align: left;
 }
 
-.inline-wro {
-    width: 21vw;
-    height: 24.45vw;
-    float: right;
-    margin-left: 3vw;
-    margin-bottom: 2vw;
-    box-shadow: 0 0.1vw 0.5vw 0 rgba(0, 0, 0, 0.1), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.12);
-}
-
-.inline-ftc {
+.inline {
     width: 24vw;
     height: 16vw;
     float: right;
     margin-left: 3vw;
     margin-bottom: 2vw;
-    box-shadow: 0 0.1vw 0.5vw 0 rgba(0, 0, 0, 0.1), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.1vw 0.5vw 0 rgba(0,0,0,0.1), 0 0.7vw 2vw 0 rgba(0,0,0,0.12);
 }
 
-@media all and (max-width:1100px) {
-    .inline-wro, .inline-ftc {
-        visibility:none;
-        opacity:0;
+@media all and (max-width:1000px) {
+    .inline {
+        visibility: none;
+        opacity: 0;
         height: 0;
         width: 0;
     }
+}
+
+.tabs .tab a{
+    color: #031028;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+	background-color:transparent;
+	color: #031028;
+}
+
+.tabs .indicator {
+	background-color: #031028;
 }
 
 .timeline {
@@ -165,6 +177,12 @@ h6 {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+}
+
+@media (max-width: 800px) {
+    .timeline::after {
+        margin-left: -6px;
+    }
 }
 
 .timeline-container {
@@ -246,9 +264,9 @@ h6 {
   
   .timeline-container::before {
     left: 60px;
-    border: medium solid #000;
+    border: medium solid #ddd;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #ddd transparent transparent;
   }
 
   .t-left::after, .t-right::after {
