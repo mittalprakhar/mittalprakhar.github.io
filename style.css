@@ -1,0 +1,132 @@
+@import url("font-awesome/css/font-awesome.min.css");
+
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    color: #444;
+    font-family: open sans;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;  
+    text-shadow: 2px 0 white;
+    letter-spacing: 4px;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+.header {
+    background-image: url(img/1.png);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url(img/1.png);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    padding: 60px;
+}
+
+.header-text {
+    margin: auto auto;
+    font-size: 1.5em;
+    color: white;
+}
+
+.content {
+    margin: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.img-avatar {
+    height: 175px;
+    transform: rotate(20deg);
+    border-radius: 100%;
+    margin: 30px;
+}
+
+.section-title {
+    height: 60%;
+    width: 100%;
+    display: inline-flex;
+    padding: 60px;
+}
+
+.section-1 {
+    background-image: url(img/2.png);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(img/2.png);
+    background-attachment: fixed;
+}
+
+.section-2 {
+    background-image: url(img/3.png);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(img/3.png);
+    background-attachment: fixed;
+}
+
+.section-3 {
+    background-image: url(img/4.png);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(img/4.png);
+    background-attachment: fixed;
+}
+
+.contact {
+    height: 90%;
+    width: 100%;
+    display: inline-flex;
+    padding-top: 5vh;
+}
+
+@media all and (max-width: 600px) {
+.inline-ftc {
+    width: 324px;
+    height: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+}
+
+@media all and (min-width: 600px) {
+.inline-ftc {
+    width: 396px;
+    height: 220px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+}
+
+@media all and (min-width: 992px) {
+.inline-ftc {
+    width: 504px;
+    height: 280px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+center a {
+    font-size: 35px;
+    margin: 12px;
+}
