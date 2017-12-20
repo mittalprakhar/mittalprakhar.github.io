@@ -7,16 +7,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href = "style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="css3-animate-it-master/css/animations.css" rel="stylesheet">
+        <!--[if lte IE 9]>
+            <link href="css3-animate-it-master/css/animations-ie-fix.css" rel="stylesheet">
+        <![endif]-->
     </head>
     
     <body>
         <div class="header">
-            <div class="header-text">
-                <h1> I am <br> Prakhar </h1>
-                I build robots, which sort trash.<br>
-                I write programs, that move machines.<br>
-                I make music, because it sounds great.<br><br>
-                <h5> Welcome to my little space on the Internet, scroll down to know more!</h5>
+            <div class="header-text animatedParent animateOnce" data-sequence="300">
+                <h1 class="animated fadeInUpShort" data-id="1"> I am <br> Prakhar </h1>
+                <span class="animated fadeIn" data-id="2">I build robots, which sort trash.</span><br>
+                <span class="animated fadeIn" data-id="3">I write programs, that move machines.</span><br>
+                <span class="animated fadeIn" data-id="4">I make music, because it sounds great.</span><br><br>
+                <h5 class="animated fadeInUp" data-id="4"> Welcome to my little space on the Internet, scroll down to know more!</h5>
             </div>
         </div>
         
@@ -25,14 +29,14 @@
                 <div class="col s12 m1 l2"></div>
                 <div class="col s12 m10 l8"><br><br>
                     <center><img src="img/avatar.jpeg" class="img-avatar"></center>
-                    <p class="animated bounce">Hey there! I am Prakhar Mittal, currently 15 years old. I was born in a small town called Saharanpur in India. I am very passionate about solving challenges and I spend a lot of time working on my computer: surfing the Internet, watching videos, following my favourite topics, trying out new programming languages and making short films. 
+                    <p>Hey there! I am Prakhar Mittal, currently 15 years old. I was born in a small town called Saharanpur in India. I am very passionate about solving challenges and I spend a lot of time working on my computer: surfing the Internet, watching videos, following my favourite topics, trying out new programming languages and making short films. 
 
                     <p>I have been learning the piano since I was seven and I also play for a pop band 'The Ensomniac Dreamers' since 2016. During my free time, I listen to songs, and play them on my piano, or compose my own music.
 
                     <p>In 2015, I co-founded robotics team 'High Voltage' when we participated in World Robot Olympiad. In the FIRST LEGO League season, I was introduced to the mechanical aspect of building a robot and I got the opportunity of interacting with people across the globe. Being a part of the STEM community helped me become a better leader and improved my problem identification and logical reasoning skills.
 
                     <p>The highlight of my journey in the field of robotics was when my team bounced back from a failed run to get a fullscore in the final run of WRO 2016. We finished second at the international event and bagged the Silver Medal for our country.
-                <br><br>
+                    <br><br><br>
                 </div>
                 <div class="col s12 m1 l2"></div>
             </div>
@@ -63,7 +67,7 @@
                         <li>2nd position - WRO 2016, won a Silver Medal for India</li>
                     </ul>
                     
-                <br><br>
+                    <br><br>
                 </div>
                 <div class="col s12 m1 l2"></div>
             </div>
@@ -93,7 +97,7 @@
                         <li>Represented India - FTC World Championship, St Louis, USA</li>
                     </ul>
                     
-                <br><br>
+                    <br><br>
                 </div>
                 <div class="col s12 m1 l2"></div>
             </div>
@@ -118,8 +122,9 @@
             &copy; 2017 Prakhar Mittal &nbsp;|&nbsp; Made with &hearts; in India
         </footer>
         
-    <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="css3-animate-it-master/js/css3-animate-it.js"></script>
 
     </body>
 </html>
