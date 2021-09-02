@@ -1,137 +1,109 @@
 <html>
     <head>
-	   <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <title>Prakhar Mittal</title>
-        <link rel="icon" href="img/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-        <link rel="stylesheet" type="text/css" href = "style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(window).scroll(function() {
-                if ($(this).scrollTop()>0) {
-                    $('#navjs').fadeOut();
-                }
-                else {
-                    $('#navjs').fadeIn();
-                }
-            });
-        </script>-->
+
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/60d411b6dd.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     
     <body>
-        <div class="navbar-fixed hide-on-med-and-down" id="navjs">
-            <nav class="z-depth-0">
-                <div class="nav-wrapper">
-                    <ul>
-                        <li><a href="#profile">Profile</a></li>
-                        <li><a href="#wro">WRO</a></li>
-                        <li><a href="#ftc">FTC</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="navbar">
+            <div class="nav-cross" onclick="navbarExpand()">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+            <div class="nav-title">
+                <a href="">Prakhar Mittal</a>
+            </div>
+            <div class="nav-items">
+                <a class="nav-item" href="">About</a>
+                <a class="nav-item" href="">Work</a>
+                <a class="nav-item" href="">Resume</a>
+            </div>
         </div>
-        <div class="header">
-            <h3>Hey! I'm Prakhar</h3>
-            <h6>Welcome to my little space on the Internet</h6>
-        </div>
-        
-        <div class="whitespace"></div>
-        
-        <div class="section" id="profile">
-            <div class="row">
-                <div class="col s12 m1 l2"></div>
-                <div class="col s12 m10 l8"><br><br>
-                    <center><img src="img/avatar.jpg" class="img-avatar"></center>
-                    <p><br>I am a 17 year old student from Gurgaon, India. I am very passionate about solving challenges and I spend a lot of time working on my computer: reading articles, watching educational videos, trying out new programming languages and making short films. 
 
-                    <p>I have been learning the piano since I was eight and I have played for a pop band called 'The Ensomniac Dreamers' since 2016. During my free time, I listen to songs and play them on my piano, or compose my own music.
+        <div class="content">
+            <div class="landing">
+                <h1>Hello, I am <span style="color: var(--primary-light);">Prakhar</span>,
+                    a <span style="color: var(--tertiary);">software developer</span> from
+                    <span style="color: var(--secondary);">Georgia Tech</span> in Atlanta.</h1>
+                <img src="" height=10>
+            </div>
 
-                    <p>In 2015, I co-founded a robotics team called 'High Voltage' which participated in the World Robot Olympiad and the FIRST Tech Challenge. I was also a member of a FIRST Tech Challenge team called 'Team ACDC.' Participating in FTC made me familiar with Android Studio and I learnt how to use industrial-grade equipment and materials. Moreover, being a part of the STEM community has given me the opportunity to interact with people across the globe and improved my problem solving and logical reasoning skills.
+            <div class="work">
+                <!--<h2>My Work</h2>-->
+                <div class="work-container">
+                    <div class="card">
+                        <img src="img/File218.jpg" class="card-image">
+                        <div class="card-text">
+                            <h3>Track My Change</h3>
+                            Text Here
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/File218.jpg" class="card-image">
+                        <div class="card-text">
+                            <h3>RoboJackets</h3>
+                            Text Here
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/File218.jpg" class="card-image">
+                        <div class="card-text">
+                            <h3>AC/DC Robotics</h3>
+                            Text Here
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/File218.jpg" class="card-image">
+                        <div class="card-text">
+                            <h3>Crime Visualization</h3>
+                            Text Here
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/File218.jpg" class="card-image">
+                        <div class="card-text">
+                            <h3>IdeateFX</h3>
+                            Text Here
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/File218.jpg" class="card-image">
+                        <div class="card-text">
+                            <h3>Odyssey</h3>
+                            Text Here
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="contact">
+                <h2>Get in touch!</h2>
+                <div class="contact-text">Please feel free to reach out if you are looking for a software developer, have a project idea to discuss, or just want to connect.</div>
+                <div class="contact-icons">
+                    <a href="mailto:prakhar@gatech.edu" target="_blank"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/mittalprakhar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/mittalprakhar" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://calendly.com/prakharmittal" target="_blank"><i class="far fa-handshake"></i></a>
+                </div>
+            </div>
 
-                    <p>The highlight of my journey in the field of robotics was when my team bounced back from a failed run to get a fullscore in the final run of World Robot Olympiad 2016. We finished second at the International Championship and bagged the Silver Medal for our country, and were widely covered by the media for the same.
-                    <br><br><br>
-                </div>
-                <div class="col s12 m1 l2"></div>
+            <div class="footer">
+                &copy; 2021. &nbsp; Made with &hearts; by Prakhar Mittal.
             </div>
         </div>
-        
-        <div class="transition transition-1"></div>
-        
-        <div class="section" id="wro">
-            <div class="row">
-                <div class="col s12 m1 l2"></div>
-                <div class="col s12 m10 l8"><br><br>
-                    <center><h3>World Robot Olympiad</h3></center>
-                    <p><br>The World Robot Olympiad is a global robotics competition for young people. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Indian chapter began from October, with the Delhi-NCR Regionals being the opening event of the season.
-                        
-                    <p>The 2016 Regular Junior High challenge 'Waste Sorting' required a robot to autonomously identify and locate the different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins, to sort the waste. The challenge required locating the different bins available for sorting (also differentiated by colors and location), identifying different wastes available, and matching the wastes to their respective bins using an algorithm. Finally, to score points, the robot needed to pick the wastes, deposit them in the bins, and return to the start area. <br><br>
-                        
-                    <p><h5>Awards and Achievements:</h5>
-                    <ul>
-                        <li>Full score - 120 points</li>
-                        <li>1st position - Delhi-NCR Regionals</li>
-                        <li>2nd position - WRO India Nationals</li>
-                        <li>2nd position - WRO 2016, won a Silver Medal for India</li>
-                    </ul>
-                    <br><br>
-                </div>
-                <div class="col s12 m1 l2"></div>
-            </div>
-        </div>
-        
-        <div class="videos">
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <iframe src="https://www.youtube.com/embed/tjj_EbqDVHQ?rel=0&modestbranding=1" class="video-1"></iframe>
-                </div>
-                <div class="col s12 m6 l6">
-                    <iframe src="https://www.youtube.com/embed/C_2UFD-xmSk?rel=0&modestbranding=1" class="video-2"></iframe>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section" id="ftc">
-            <div class="row">
-                <div class="col s12 m1 l2"></div>
-                <div class="col s12 m10 l8"><br><br>
-                    <center><h3>FIRST Tech Challenge</h3></center>
-                    <p><br>FIRST Tech Challenge is a global, robotics competition for students in grades 9-12. FTC teams are responsible for planning, building and programming their robots in a 3-month build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience.
-                    
-                    <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks. The match began with an autonomous period, where the robots could only operate by pre-programmed instructions. The autonomous period was followed by a driver-controlled period, where points were awarded if the robot shot particles into the designated areas. Our robot featured a holonomic drivetrain for increased maneuverability, a flicker for quickly and effectively launching the particles and a mechanism for pressing the correct beacon buttons. <br><br>
-                    
-                    <p><h5>Awards and Achievements:</h5>
-                    <ul>
-                        <li>Inspire Award Winner - FTC India</li>
-                        <li>Captain of Winning Alliance - FTC India</li>
-                        <li>Represented India - FTC World Championship, St Louis, USA</li>
-                    </ul>
-                    
-                    <br><br>
-                </div>
-                <div class="col s12 m1 l2"></div>
-            </div>
-        </div>
-        
-        <div class="transition transition-2"></div>
-        
-        <div class="section" id="contact" style="padding-left: 25px; padding-right: 25px;">
-            <center><br><br>
-                <h3>Get in touch!</h3><br>
-                <h6>Check out music and robotics videos on my YouTube channel.</h6>
-                <p><h6>Choose your preferred means of communication, and let's get talking.</h6><br><br>
-             	<a href="https://www.linkedin.com/in/prakhar-mittal-682ab1171/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://bit.ly/youtubeprakhar" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                <a href="https://github.com/mittalprakhar" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="mailto:mittalprakhar57@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            </center><br><br>
-        </div>
-        
-        <footer>
-            Made with love by Prakhar Mittal
-        </footer>
+
+        <script src="js/navbar.js"></script>
     </body>
-    
 </html> 
