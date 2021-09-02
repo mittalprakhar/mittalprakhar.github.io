@@ -12,27 +12,28 @@
         <script src="https://kit.fontawesome.com/60d411b6dd.js" crossorigin="anonymous"></script>
 
         <link rel="shortcut icon" href="img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     
     <body>
         <div class="navbar">
-            <div class="nav-cross" onclick="navbarExpand()">
+            <div class="nav-cross" onclick="navbarToggle()">
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
             </div>
             <div class="nav-title">
-                <a href="">Prakhar Mittal</a>
+                <a href="#top" onclick="navbarClose()">Prakhar Mittal</a>
             </div>
             <div class="nav-items">
-                <a class="nav-item" href="">About</a>
-                <a class="nav-item" href="">Work</a>
+                <a class="nav-item" href="#work" onclick="navbarClose()">Work</a>
+                <a class="nav-item" href="about.html">About</a>
                 <a class="nav-item" href="">Resume</a>
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" id="top">
             <div class="landing">
                 <h1>Hello, I am <span style="color: var(--primary-light);">Prakhar</span>,
                     a <span style="color: var(--tertiary);">software developer</span> from
@@ -40,49 +41,48 @@
                 <img src="" height=10>
             </div>
 
-            <div class="work">
-                <!--<h2>My Work</h2>-->
+            <div class="work" id="work">
                 <div class="work-container">
                     <div class="card">
-                        <img src="img/File218.jpg" class="card-image">
+                        <img src="img/track-my-change.png" class="card-image">
                         <div class="card-text">
                             <h3>Track My Change</h3>
-                            Text Here
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id placerat nulla, sed ultricies mauris.
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/File218.jpg" class="card-image">
+                        <img src="img/robojackets.png" class="card-image">
                         <div class="card-text">
                             <h3>RoboJackets</h3>
-                            Text Here
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id placerat nulla, sed ultricies mauris.
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/File218.jpg" class="card-image">
+                        <img src="img/ac-dc.png" class="card-image">
                         <div class="card-text">
                             <h3>AC/DC Robotics</h3>
-                            Text Here
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id placerat nulla, sed ultricies mauris.
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/File218.jpg" class="card-image">
+                        <img src="img/crime-viz.png" class="card-image">
                         <div class="card-text">
                             <h3>Crime Visualization</h3>
-                            Text Here
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id placerat nulla, sed ultricies mauris.
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/File218.jpg" class="card-image">
+                        <img src="img/ideate-fx.png" class="card-image">
                         <div class="card-text">
                             <h3>IdeateFX</h3>
-                            Text Here
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id placerat nulla, sed ultricies mauris.
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/File218.jpg" class="card-image">
+                        <img src="img/odyssey.png" class="card-image">
                         <div class="card-text">
                             <h3>Odyssey</h3>
-                            Text Here
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id placerat nulla, sed ultricies mauris.
                         </div>
                     </div>
                 </div>
@@ -104,6 +104,6 @@
             </div>
         </div>
 
-        <script src="js/navbar.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html> 

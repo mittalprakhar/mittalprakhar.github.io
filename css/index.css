@@ -1,0 +1,62 @@
+.landing {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 600px;
+}
+
+.work {
+    min-height: calc(100vh - 80px);
+    justify-content: center;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--primary-mid);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.card-image {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .card {
+        width: 350px;
+    }
+}
+
+.card-text {
+    padding: 20px;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.card-text h3 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+.about {
+    color: var(--primary-dark);
+    background-color: var(--font-color);
+}
+
+.landing {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 600px;
+}

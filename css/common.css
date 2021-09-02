@@ -11,6 +11,7 @@
 
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     color: var(--font-color);
@@ -24,20 +25,22 @@ a {
 }
 
 h1, h2, h3 {
-    font-weight: 600;
     margin: 0;
 }
 
 h1 {
+    font-weight: 600;
     font-size: 3rem;
 }
 
 h2 {
+    font-weight: 600;
     font-size: 2.7rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 750px) {
@@ -56,6 +59,7 @@ h3 {
     height: 80px;
     background-color: var(--primary-dark);
     font-weight: 600;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 750px) {
@@ -205,65 +209,6 @@ h3 {
     }
 }
 
-.landing {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 600px;
-}
-
-.work {
-    min-height: calc(100vh - 80px);
-    justify-content: center;
-}
-
-.work-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-}
-
-.card {
-    width: 300px;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.card-image {
-    object-fit: cover;
-    width: 100%;
-    height: 330px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-@media only screen and (max-width: 900px) {
-    .card {
-        width: 250px;
-    }
-
-    .card-image {
-        height: 280px;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .card {
-        width: 350px;
-    }
-
-    .card-image {
-        height: 390px;
-    }
-}
-
-.card-text h3 {
-    margin-bottom: 5px;
-}
-
 .contact {
     display: flex;
     justify-content: center;
@@ -328,4 +273,23 @@ h3 {
     font-weight: 600;
     font-size: 0.85rem;
     color: var(--light-grey);
+}
+
+.scroll-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 25;
+    right: 25;
+    z-index: 2;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+    background-color: var(--primary-mid);
+    transition: all 0.2s;
+}
+
+@media only screen and (min-width: 750px) {
+    .scroll-top.show {
+        opacity: 1;
+    }
 }
