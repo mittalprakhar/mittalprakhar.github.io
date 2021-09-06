@@ -217,7 +217,9 @@ h3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 240px);
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .contact-text {

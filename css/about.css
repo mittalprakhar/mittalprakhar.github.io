@@ -4,8 +4,35 @@
 }
 
 .landing {
+    min-height: calc(100vh - 190px);
+    padding-top: 130px;
+    padding-bottom: 60px;
     display: flex;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-picture {
+    border-radius: 5px;
+    width: 30vw;
+    min-width: 250px;
+    max-width: 400px;
+    float: right;
+    margin: 40px 0 35px 35px;
+}
+
+@media only screen and (max-width: 750px) {
+    .about-picture {
+        float: none;
+        display: block;
+        width: 70vw;
+        max-width: 400px;
+        margin: 35px auto 0 auto;
+    }
+}
+
+.about-text {
+    margin-top: 35px;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
 }
