@@ -6,7 +6,7 @@
     --tertiary: #d34f38;
     --font-color: #ffffff;
     --light-grey: #bdbfcce5;
-    --primary-font: 'Source Sans Pro';
+    --primary-font: 'Source Sans Pro', sans-serif;
 }
 
 html, body {
