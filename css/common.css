@@ -271,7 +271,7 @@ h3 {
 }
 
 .contact-text {
-    max-width: 600px;
+    max-width: 700px;
     padding: 35px 0 45px 0;
     font-size: 1.3rem;
     line-height: 2rem;
@@ -287,21 +287,21 @@ h3 {
 
 @media only screen and (min-width: 1440px) {
     .contact-text {
-        max-width: 800px;
+        max-width: 850px;
         padding: 45px 0 55px 0;
     }
 }
 
 @media only screen and (min-width: 1920px) {
     .contact-text {
-        max-width: 1000px;
+        max-width: 1050px;
         padding: 60px 0 70px 0;
     }
 }
 
 @media only screen and (min-width: 2200px) {
     .contact-text {
-        max-width: 1100px;
+        max-width: 1200px;
     }
 }
 
