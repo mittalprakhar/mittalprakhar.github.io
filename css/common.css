@@ -55,25 +55,25 @@ h3 {
 
 @media only screen and (min-width: 1440px) {
     html {
-        font-size: 130%;
+        font-size: 120%;
     }
 }
 
 @media only screen and (min-width: 1920px) {
     html {
-        font-size: 160%;
+        font-size: 150%;
     }
 }
 
 @media only screen and (min-width: 2200px) {
     html {
-        font-size: 180%;
+        font-size: 170%;
     }
 }
 
 @media only screen and (min-width: 2560px) {
     html {
-        font-size: 230%;
+        font-size: 220%;
     }
 }
 
