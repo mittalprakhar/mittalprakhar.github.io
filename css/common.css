@@ -53,6 +53,30 @@ h3 {
     }
 }
 
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 140%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 170%;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    html {
+        font-size: 190%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    html {
+        font-size: 240%;
+    }
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -71,6 +95,18 @@ h3 {
         overflow: hidden;
         flex-direction: column;
         height: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .navbar {
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .navbar {
+        height: 180px;
     }
 }
 
@@ -217,9 +253,21 @@ h3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 237px);
     padding-top: 60px;
     padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact {
+        min-height: calc(100vh - 295px);
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .contact {
+        min-height: calc(100vh - 375px);
+    }
 }
 
 .contact-text {
@@ -234,6 +282,33 @@ h3 {
         padding: 30px 0 40px 0;
         font-size: 1.15rem;
         line-height: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact-text {
+        max-width: 800px;
+        padding: 45px 0 55px 0;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .contact-text {
+        max-width: 1000px;
+        padding: 60px 0 70px 0;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .contact-text {
+        max-width: 1100px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .contact-text {
+        max-width: 1400px;
+        padding: 80px 0 100px 0;
     }
 }
 
@@ -255,6 +330,40 @@ h3 {
     margin: 0 10px;
     color: var(--white);
     transition: all 0.2s;
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact-icons {
+        width: 240px;
+        padding: 4px 0;
+    }
+
+    .contact-icons i {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .contact-icons {
+        width: 310px;
+        padding: 7px 0;
+    }
+
+    .contact-icons i {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .contact-icons {
+        width: 480px;
+        padding: 25px 0;
+    }
+
+    .contact-icons i {
+        font-size: 65px;
+        margin: 0 18px;
+    }
 }
 
 .contact-icons i.fa-envelope:hover {
@@ -281,6 +390,19 @@ h3 {
     color: var(--light-grey);
 }
 
+@media only screen and (min-width: 1440px) {
+    .footer {
+        height: 80px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .footer {
+        height: 120px;
+    }
+}
+
 .scroll-top {
     opacity: 0;
     position: fixed;
@@ -297,5 +419,21 @@ h3 {
 @media only screen and (min-width: 750px) {
     .scroll-top.show {
         opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .scroll-top {
+        padding: 20px;
+        bottom: 40;
+        right: 40;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .scroll-top {
+        padding: 30px;
+        bottom: 55;
+        right: 55;
     }
 }
