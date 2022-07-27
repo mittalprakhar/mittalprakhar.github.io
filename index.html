@@ -27,7 +27,8 @@
             </div>
             <div class="nav-items">
                 <a class="nav-item" href="#work" onclick="navbarClose()">Work</a>
-                <a class="nav-item" href="https://prakharmittal.tech/about">About</a>
+                <a class="nav-item" href="#projects" onclick="navbarClose()">Projects</a>
+                <a class="nav-item" href="#contact" onclick="navbarClose()">Contact</a>
             </div>
         </div>
 
@@ -38,40 +39,71 @@
                     <span style="color: var(--secondary);">Georgia Tech</span> in Atlanta.</h1>
             </div>
 
-            <div class="work" id="work">
-                <div class="work-container">
-                    
+            <div class="section" id="work">
+                <h3 class="section-title">Work Experience</h3>
+                <div class="card-container">
                     <div class="card">
-                        <a href="https://trackmychange.com" target="_blank">
-                            <img src="img/track-my-change.png" class="card-image">
+                        <a href="https://arvr.google.com/ar" target="_blank">
+                            <img src="img/google.png" class="card-image">
                             <div class="card-text">
-                                <h3>Track My Change</h3>
-                                Helping social organizations capture, quantify, and convey their impact to attract more donations and volunteers.
+                                <h4>STEP Intern</h4>
+                                <div class="date">May 2022 - Present</div>
+                                Developed a full-stack Android app for a Google Lens-based AR experience.
                             </div>
                         </a>
                     </div>
                     <div class="card">
-                        <a href="https://github.com/RoboJackets/roboracing-software/pull/362" target="_blank">
+                        <a href="https://www.cc.gatech.edu" target="_blank">
+                            <img src="img/gt-coc.png" class="card-image">
+                            <div class="card-text">
+                                <h4>Teaching Assistant</h4>
+                                <div class="date">January 2022 - Present</div>
+                                Taught CS 1331: Object-Oriented Programming to 200+ students.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://research.gatech.edu/your-next-personal-assistant-could-be-drone" target="_blank">
+                            <img src="img/experimantal-flights.png" class="card-image">
+                            <div class="card-text">
+                                <h4>Undergraduate Researcher</h4>
+                                <div class="date">August 2022 - Present</div>
+                                Built software to support a network of delivery drones.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://robojackets.org" target="_blank">
                             <img src="img/robojackets.png" class="card-image">
                             <div class="card-text">
-                                <h3>RoboJackets</h3>
-                                Leveraging computer vision algorithms to enable an RC-sized car to autonomously navigate traffic intersections.
+                                <h4>Software Developer</h4>
+                                <div class="date">September 2020 - August 2021</div>
+                                Enabled an autonomous car to classify road signs and traffic lights.
                             </div>
                         </a>
                     </div>
                     <div class="card">
-                        <img src="img/ac-dc.png" class="card-image">
-                        <div class="card-text">
-                            <h3>AC/DC Robotics</h3>
-                            Designed a semi-autonomous robot capable of holonomic driving, projectile shooting, and image detection.
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://github.com/mittalprakhar/juvenile-crime" target="_blank">
-                            <img src="img/crime-viz.png" class="card-image">
+                        <a href="https://www.linkedin.com/company/74967029" target="_blank">
+                            <img src="img/track-my-change.png" class="card-image">
                             <div class="card-text">
-                                <h3>Crime Visualization</h3>
-                                Analyzed trends in crime in India by cleaning, classifying, and graphing government data using Plotly and sk-learn. 
+                                <h4>Web Development Lead</h4>
+                                <div class="date">May 2021 - August 2021</div>
+                                Developed web widgets for social organizations to quantify their impact.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="projects">
+                <h3 class="section-title">Selected Projects</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="https://github.com/mittalprakhar/PowerUP" target="_blank">
+                            <img src="img/power-up.png" class="card-image">
+                            <div class="card-text">
+                                <h4>PowerUP</h4>
+                                Multi-platform video game. Players must buy, place, and upgrade towers to defend their castle from enemy waves.
                             </div>
                         </a>
                     </div>
@@ -79,31 +111,54 @@
                         <a href="https://github.com/mittalprakhar/IdeateFX" target="_blank">
                             <img src="img/ideate-fx.png" class="card-image">
                             <div class="card-text">
-                                <h3>IdeateFX</h3>
-                                Developed a JavaFX application that accelerates brainstorming startup ideas and calculates their feasibility scores. 
+                                <h4>IdeateFX</h4>
+                                Application to accelerate brainstorming, categorizing, and sorting startup ideas based on feasibility metrics.
                             </div>
                         </a>
                     </div>
                     <div class="card">
-                        <a href="https://processors.ml/odyssey" target="_blank">
-                            <img src="img/odyssey.png" class="card-image">
+                        <a href="https://github.com/mittalprakhar/juvenile-crime" target="_blank">
+                            <img src="img/juvenile-crime.png" class="card-image">
                             <div class="card-text">
-                                <h3>Odyssey</h3>
-                                Created a platform to host online cryptic hunts with 200+ active members, written in Django and PostgreSQL.
+                                <h4>Juvenile Crime Analysis</h4>
+                                Classified states based on crime risk using k-means clustering, and identified correlated socio-economic factors.
                             </div>
                         </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://processors.netlify.app/odyssey" target="_blank">
+                            <img src="img/odyssey.png" class="card-image">
+                            <div class="card-text">
+                                <h4>Odyssey</h4>
+                                India's first quest-based cryptic hunt. Reached 250+ participants and 10,000+ answer submissions in 3 days.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <img src="img/hive-storm.png" class="card-image">
+                        <div class="card-text">
+                            <h4>HiveStorm</h4>
+                            Brick breaker game for the Gameboy Advance. Implemented Direct Memory Access to combat graphics limitations.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/little-computer.png" class="card-image">
+                        <div class="card-text">
+                            <h4>Little Computer 22-A</h4>
+                            5-stage pipelined computer with branch prediction and data forwarding. Runs RISC-V instructions, and supports I/O and traps.
+                        </div>
                     </div>
                 </div>
             </div>
                 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h2>Get in touch!</h2>
                 <div class="contact-text">Looking for a developer, have a project idea to discuss, or just want to connect? Choose your preferred means of communication, and let's get talking.</div>
                 <div class="contact-icons">
-                    <a href="mailto:prakhar@gatech.edu" target="_blank"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/mittalprakhar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/mittalprakhar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/mittalprakhar" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://calendly.com/prakharmittal" target="_blank"><i class="far fa-handshake"></i></a>
+                    <a href="mailto:prakhar@gatech.edu" target="_blank"><i class="far fa-envelope"></i></a>
+                    <a href="https://calendly.com/prakharmittal" target="_blank"><i class="fa fa-calendar"></i></a>
                 </div>
             </div>
 

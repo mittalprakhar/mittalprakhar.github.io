@@ -1,7 +1,7 @@
 :root {
     --primary-light: #4399FF;
-    --primary-mid: #353d83;
-    --primary-dark: #1a1d3a;
+    --primary-mid: #232a69;
+    --primary-dark: #121538;
     --secondary: #eeb211;
     --tertiary: #d34f38;
     --font-color: #ffffff;
@@ -24,7 +24,7 @@ a {
     color: inherit
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
@@ -39,6 +39,11 @@ h2 {
 }
 
 h3 {
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+h4 {
     font-weight: 700;
     font-size: 1.3rem;
 }
@@ -50,6 +55,10 @@ h3 {
 
     h2 {
         font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2.0rem;
     }
 }
 
@@ -258,6 +267,15 @@ h3 {
     padding-bottom: 40px;
 }
 
+@media screen and (orientation: portrait) {
+    .contact {
+        min-height: 400px;
+        margin-top: -20px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+}
+
 @media only screen and (min-width: 1440px) {
     .contact {
         min-height: calc(100vh - 295px);
@@ -378,7 +396,7 @@ h3 {
     color: var(--light-grey);
 }
 
-.contact-icons i.fa-handshake:hover {
+.contact-icons i.fa-calendar:hover {
     color: var(--tertiary);
 }
 

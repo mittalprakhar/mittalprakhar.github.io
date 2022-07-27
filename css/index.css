@@ -1,8 +1,23 @@
 .landing {
     display: flex;
     align-items: center;
-    min-height: 100vh;
     max-width: 600px;
+    padding-top: 30px;
+    min-height: calc(100vh - 30px);
+}
+
+@media screen and (orientation: portrait) {
+    .landing {
+        margin-bottom: -50px;
+        min-height: 430px;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-width: 750px) {
+    .landing {
+        margin-bottom: -30px;
+        min-height: 550px;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -29,15 +44,34 @@
     }
 }
 
-.work {
+.section {
     min-height: calc(100vh - 80px);
     justify-content: center;
 }
 
-.work-container {
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 750px) {
+    .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+#work {
+    scroll-margin-top: 100px;
+}
+
+#projects {
+    scroll-margin-top: 100px;
+}
+
+.card-container {
     display: flex;
+    align-items: stretch;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -122,18 +156,18 @@
     }
 }
 
-.card-text h3 {
+.card-text h4, .card-text .date {
     margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 1440px) {
-    .card-text h3 {
+    .card-text h4, .card-text .date {
         margin-bottom: 12.5px;
     }
 }
 
 @media only screen and (min-width: 2560px) {
-    .card-text h3 {
+    .card-text h4, .card-text .date {
         margin-bottom: 25px;
     }
 }
