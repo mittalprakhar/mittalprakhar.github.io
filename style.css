@@ -2,6 +2,32 @@ body {
     transition: all 0.15s linear;
 }
 
+p {
+    text-align: left;
+}
+
+.about-body {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about-body img {
+    max-height: 150px;
+    border: 1px solid hsla(240, 6%, 26%, 0.2);
+    margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+    .about-body {
+        display: block;
+    }
+
+    .about-body img {
+        display: none;
+    }
+}
+
 i.fa {
     color: hsl(0, 6%, 10%);
     margin-right: 10px;
@@ -85,10 +111,6 @@ i.fa-calendar:hover {
     border: 1px solid hsla(0, 0%, 86%, 1);
 }
 
-p {
-    text-align: left;
-}
-
 ul, .project-body p {
     margin: 0;
 }
@@ -96,11 +118,14 @@ ul, .project-body p {
 .project-body {
     display: flex;
     gap: 10px;
+    align-items: center;
+    margin-bottom: 7px;
 }
 
 .project-body img {
     max-height: 150px;
     border: 1px solid hsla(240, 6%, 26%, 0.2);
+    margin-top: 3px;
 }
 
 @media (max-width: 640px) {
