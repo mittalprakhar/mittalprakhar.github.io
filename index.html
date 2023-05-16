@@ -1,189 +1,650 @@
 <html>
-    <head>
-        <title>Prakhar Mittal</title>
 
-	    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <title>Prakhar Mittal</title>
+    <meta name="author" content="Prakhar Mittal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" async>
 
-        <link rel="shortcut icon" href="img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="css/common.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-    </head>
+    <script src="https://kit.fontawesome.com/60d411b6dd.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <div class="navbar">
-            <div class="nav-cross" onclick="navbarToggle()">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-            </div>
-            <div class="nav-title">
-                <a href="#top" onclick="navbarClose()">Prakhar Mittal</a>
-            </div>
-            <div class="nav-items">
-                <a class="nav-item" href="#work" onclick="navbarClose()">Work</a>
-                <a class="nav-item" href="#projects" onclick="navbarClose()">Projects</a>
-                <a class="nav-item" href="#contact" onclick="navbarClose()">Contact</a>
-            </div>
-        </div>
+<body>
+    <header>
+        <h1>Prakhar Mittal</h1>
+        <p class="author">
+            Last Updated <br>
+            May 2023
+        </p>
+    </header>
 
-        <div class="content" id="top">
-            <div class="landing">
-                <h1>Hello, I am <span style="color: var(--primary-light);">Prakhar</span>,
-                    a <span style="color: var(--tertiary);">software developer</span> from
-                    <span style="color: var(--secondary);">Georgia Tech</span> in Atlanta.</h1>
-            </div>
+    <main>
+        <article>
+            <h2>About</h2>
+            <p>
+                Hey! I am Prakhar, a fourth year Bachelor's in Computer Science student
+                at the Georgia Institute of Technology, specializing in programming
+                robots and building interactive apps and websites. I am currently
+                looking for Fall 2023 internships in software engineering and robotics.
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/mittalprakhar" target="blank"><i
+                        class="fa fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/mittalprakhar" target="blank"><i class="fa fa-github fa-lg"></i></a>
+                <a href="mailto:prakhar@gatech.edu" target="blank"><i class="fa fa-envelope fa-lg"></i></a>
+                <a href="https://calendly.com/prakharmittal" target="_blank"><i class="fa fa-calendar"></i></a>
+            </p>
+            <h2>Industry</h2>
 
-            <div class="section" id="work">
-                <h3 class="section-title">Work Experience</h3>
-                <div class="card-container">
-                    <div class="card">
-                        <a href="https://www.lab-idar.gatech.edu" target="_blank">
-                            <img src="img/lidar.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Undergraduate Researcher</h4>
-                                <div class="date">January 2023 - Present</div>
-                                Working on contact-aware manipulation for humanoid robots.
-                            </div>
-                        </a>
+            <div class="experience-header">
+                <img src="img/youtube.png">
+                <div>
+                    <div class="experience-title">
+                        YouTube
                     </div>
-                    <div class="card">
-                        <a href="https://www.cc.gatech.edu" target="_blank">
-                            <img src="img/gt-coc.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Teaching Assistant</h4>
-                                <div class="date">January 2022 - December 2022</div>
-                                Taught CS 1331: Object-Oriented Programming to 500+ students.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="https://research.gatech.edu/your-next-personal-assistant-could-be-drone" target="_blank">
-                            <img src="img/experimantal-flights.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Undergraduate Researcher</h4>
-                                <div class="date">August 2021 - December 2022</div>
-                                Built software to support a network of delivery drones.
-                            </div>
-                        </a>
-                    </div>
-		    <div class="card">
-                        <a href="https://arvr.google.com/ar" target="_blank">
-                            <img src="img/google.png" class="card-image">
-                            <div class="card-text">
-                                <h4>STEP Intern</h4>
-                                <div class="date">May 2022 - August 2022</div>
-                                Developed a full-stack Android app for a Google Lens-based AR experience.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="https://www.linkedin.com/company/74967029" target="_blank">
-                            <img src="img/track-my-change.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Web Development Lead</h4>
-                                <div class="date">May 2021 - August 2021</div>
-                                Developed web widgets for social organizations to quantify their impact.
-                            </div>
-                        </a>
-                    </div>
-		    <div class="card">
-                        <a href="https://robojackets.org" target="_blank">
-                            <img src="img/robojackets.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Software Developer</h4>
-                                <div class="date">September 2020 - May 2021</div>
-                                Enabled an autonomous car to classify road signs and traffic lights.
-                            </div>
-                        </a>
+                    <div class="experience-subtitle">
+                        Software Engineering Intern
                     </div>
                 </div>
             </div>
+            <div class="experience-date">
+                May 2023 - August 2023
+            </div>
+            Providing large-scale processing services for big data analytics.
+            <div class="skills">
+                <span>C++</span>
+                <span>Hadoop</span>
+                <span>Flume</span>
+            </div>
 
-            <div class="section" id="projects">
-                <h3 class="section-title">Selected Projects</h3>
-                <div class="card-container">
-                    <div class="card">
-                        <a href="https://github.com/mittalprakhar/PowerUP" target="_blank">
-                            <img src="img/power-up.png" class="card-image">
-                            <div class="card-text">
-                                <h4>PowerUP</h4>
-                                Multi-platform video game. Players must buy, place, and upgrade towers to defend their castle from enemy waves.
-                            </div>
-                        </a>
+            <div class="experience-header">
+                <img src="img/google.png">
+                <div>
+                    <div class="experience-title">
+                        Google
                     </div>
-                    <div class="card">
-                        <a href="https://github.com/mittalprakhar/IdeateFX" target="_blank">
-                            <img src="img/ideate-fx.png" class="card-image">
-                            <div class="card-text">
-                                <h4>IdeateFX</h4>
-                                Application to accelerate brainstorming, categorizing, and sorting startup ideas based on feasibility metrics.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="https://github.com/mittalprakhar/juvenile-crime" target="_blank">
-                            <img src="img/juvenile-crime.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Juvenile Crime Analysis</h4>
-                                Classified states based on crime risk using k-means clustering, and identified correlated socio-economic factors.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="https://processors.netlify.app/odyssey" target="_blank">
-                            <img src="img/odyssey.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Odyssey</h4>
-                                India's first quest-based cryptic hunt. Reached 250+ participants and 10,000+ answer submissions in 3 days.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <img src="img/hive-storm.png" class="card-image">
-                        <div class="card-text">
-                            <h4>HiveStorm</h4>
-                            Brick breaker game for the Gameboy Advance. Implemented Direct Memory Access to combat graphics limitations.
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/little-computer.png" class="card-image">
-                        <div class="card-text">
-                            <h4>Little Computer 22-A</h4>
-                            5-stage pipelined computer with branch prediction and data forwarding. Runs RISC-V instructions, and supports I/O and traps.
-                        </div>
+                    <div class="experience-subtitle">
+                        STEP Intern
                     </div>
                 </div>
             </div>
-                
-            <div class="contact" id="contact">
-                <h2>Get in touch!</h2>
-                <div class="contact-text">Looking for a developer, have a project idea to discuss, or just want to connect? Choose your preferred means of communication, and let's get talking.</div>
-                <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/mittalprakhar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/mittalprakhar" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:prakhar@gatech.edu" target="_blank"><i class="far fa-envelope"></i></a>
-                    <a href="https://calendly.com/prakharmittal" target="_blank"><i class="fa fa-calendar"></i></a>
+            <div class="experience-date">
+                May 2022 - August 2022
+            </div>
+            <ul>
+                <li>
+                    Devised an immersive gardening experience for an AR smart
+                    glasses prototype as part of the Devices & Services team.
+                </li>
+                <li>
+                    Developed full-stack MVVM Android applications for both
+                    glasses and phone with state synchronization via a shared
+                    database.
+                </li>
+                <li>
+                    Leveraged computer vision models and internal APIs for
+                    salient object detection from images captured by the camera.
+                </li>
+                <li>
+                    Implemented 5+ end-to-end CUJs for identifying new plants,
+                    creating a watering schedule, setting reminders, and more.
+                </li>
+                <li>
+                    Achieved 84% test coverage, used dependency injection, wrote
+                    design docs, performed code reviews, and fixed 10+ bugs.
+                </li>
+            </ul>
+            <div class="skills">
+                <span>Android</span>
+                <span>Java</span>
+                <span>SQL</span>
+                <span>Protobuf</span>
+                <span>Espresso</span>
+                <span>Dagger</span>
+            </div>
+
+            <div class="experience-header">
+                <img src="img/track-my-change.png">
+                <div>
+                    <div class="experience-title">
+                        Track My Change
+                    </div>
+                    <div class="experience-subtitle">
+                        Web Development Lead
+                    </div>
                 </div>
             </div>
-
-            <div class="footer">
-                &copy; 2023. &nbsp; Made with &hearts; by Prakhar Mittal.
+            <div class="experience-date">
+                May 2021 - August 2021
             </div>
-        </div>
-
-        <a href="#top">
-            <div class="scroll-top" id="scroll-top">
-                <i class="fas fa-arrow-up"></i>
+            <ul>
+                <li>
+                    Joined the UC Berkeley startup as a founding engineer and
+                    built their web presence from the ground up.
+                </li>
+                <li>
+                    Designed customizable and interactive widgets for
+                    social organizations in the US & Nepal to quantify and
+                    showcase their impact.
+                </li>
+                <li>
+                    Tracked widget analytics and monitored user interactions to
+                    help clients target and attract more donors and volunteers.
+                </li>
+            </ul>
+            <div class="skills">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <span>PostgreSQL</span>
+                <span>REST API</span>
             </div>
-        </a>
 
-        <script src="https://kit.fontawesome.com/60d411b6dd.js" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
-    </body>
+            <div class="experience-header">
+                <img src="img/robojackets.png">
+                <div>
+                    <div class="experience-title">
+                        RoboJackets
+                    </div>
+                    <div class="experience-subtitle">
+                        Perception Engineer
+                    </div>
+                </div>
+            </div>
+            <div class="experience-date">
+                September 2020 - May 2021
+            </div>
+            <ul>
+                <li>
+                    Architected the perception stack for an autonomous racing
+                    car to identify road signs, traffic cones, stop lights, and
+                    lane marks.
+                </li>
+                <li>
+                    Achieved 93.8% accuracy with template matching and semantic
+                    segmentation. Improved speed 4x via multi-threading.
+                </li>
+                <li>
+                    Represented Georgia Tech at the International Autonomous
+                    Robot Racing Competition held at the University of Waterloo.
+                </li>
+            </ul>
+            <div class="skills">
+                <span>Robot Operating System</span>
+                <span>C++</span>
+                <span>OpenCV</span>
+                <span>Gazebo</span>
+            </div>
+
+            <h2>Academia</h2>
+
+            <div class="experience-header">
+                <img src="img/lidar.png">
+                <div>
+                    <div class="experience-title">
+                        Georgia Tech LIDAR
+                    </div>
+                    <div class="experience-subtitle">
+                        Undergraduate Student Researcher
+                    </div>
+                </div>
+            </div>
+            <div class="experience-date">
+                January 2023 - Present
+            </div>
+            <ul>
+                <li>
+                    Created forward and inverse kinematics models for the limbs
+                    of Agility Robotics' Digit humanoid.
+                </li>
+                <li>
+                    Fabricated custom PCBs for GelSight sensors to be placed at
+                    the robot's fingertips to enable contact-aware manipulation.
+                </li>
+                <li>
+                    Working on trajectory optimization for the robot to throw
+                    footballs and hand out diplomas at university events.
+                </li>
+            </ul>
+            <div class="skills">
+                <span>Robot Operating System</span>
+                <span>C++</span>
+                <span>tf2</span>
+                <span>Eigen</span>
+                <span>PCB Design</span>
+            </div>
+
+            <div class="experience-header">
+                <img src="img/college-of-computing.png">
+                <div>
+                    <div class="experience-title">
+                        Georgia Tech College of Computing
+                    </div>
+                    <div class="experience-subtitle">
+                        Undergraduate Teaching Assistant
+                    </div>
+                </div>
+            </div>
+            <div class="experience-date">
+                January 2022 - December 2022
+            </div>
+            <ul>
+                <li>
+                    Hosted weekly recitation sessions, Q&As, and office hours
+                    for CS 1331: Object-Oriented Programming for 500+ students.
+                </li>
+                <li>
+                    Authored assignments, worksheets, and autograders, graded
+                    exams, and taught students how to build GUIs in JavaFX.
+                </li>
+            </ul>
+            <div class="skills">
+                <span>Java</span>
+                <span>JUnit</span>
+                <span>JavaFX</span>
+            </div>
+
+            <div class="experience-header">
+                <img src="img/experimental-flights.png">
+                <div>
+                    <div class="experience-title">
+                        Georgia Tech Experimental Flights
+                    </div>
+                    <div class="experience-subtitle">
+                        Undergraduate Student Researcher
+                    </div>
+                </div>
+            </div>
+            <div class="experience-date">
+                August 2021 - December 2022
+            </div>
+            <ul>
+                <li>
+                    Wrote barcode scanning and inventory update software for a
+                    drone-based warehouse management solution for corporate
+                    clients such as Steelcase.
+                </li>
+                <li>
+                    Enabled the ground control station of an on-campus drone
+                    delivery network to display camera feeds, battery data, and
+                    flight path information.
+                </li>
+            </ul>
+            <div class="skills">
+                <span>Android</span>
+                <span>Firebase</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>Google Maps API</span>
+            </div>
+
+            <h2>AI/ML</h2>
+
+            <h4>Trajectory Descriptor Fields</h4>
+            <div class="project-body">
+                <img src="img/trajectory-descriptor-fields.png">
+                <p>
+                    Leveraged neural descriptor fields and 3D reconstruction
+                    using occupancy networks for learning SE(3)-equivariant
+                    representations of object manipulation trajectories.
+                    Optimized deep model using energy function integration.
+                </p>
+            </div>
+            <div class="skills">
+                <span>PyTorch</span>
+                <span>NumPy</span>
+                <span>Plotly</span>
+            </div>
+
+            <h4>Seq2Seq and Transformer-Based Language Translation</h4>
+            <div class="project-body">
+                <img src="img/language-translation.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>PyTorch</span>
+                <span>TorchText</span>
+                <span>Spacy</span>
+                <span>NumPy</span>
+            </div>
+
+            <h4>Local Business & Restaurant Recommendation System</h4>
+            <div class="project-body">
+                <img src="img/local-business-recommender.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>PyTorch</span>
+                <span>Pandas</span>
+                <span>NLTK</span>
+            </div>
+
+            <h4>Convolutional Neural Networks for Image Style Transfer</h4>
+            <div class="project-body">
+                <img src="img/image-style-transfer.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>PyTorch</span>
+                <span>NumPy</span>
+                <span>SqueezeNet</span>
+            </div>
+
+            <h4>Analysis of Juvenile Crime in India</h4>
+            <div class="project-body">
+                <img src="img/juvenile-crime.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Plotly</span>
+                <span>Seaborn</span>
+            </div>
+
+            <h4>Visualization Techniques for Deep Neural Networks</h4>
+            <div class="project-body">
+                <img src="img/visualization-techniques.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>PyTorch</span>
+                <span>Captum</span>
+                <span>Matplotlib</span>
+            </div>
+
+            <h2>Robotics</h2>
+
+            <h4>Web-Controlled Robot Car</h4>
+            <div class="project-body">
+                <img src="img/web-controlled-robot-car.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>ARM Mbed</span>
+                <span>Raspberry Pi</span>
+                <span>C++</span>
+                <span>PHP</span>
+                <span>Apache Server</span>
+            </div>
+
+            <h4>SLAM for Self-Driving Cars</h4>
+            <div class="project-body">
+                <img src="img/slam-for-self-driving-cars.png">
+                <p>
+                    Performed simultaneous localization and mapping on LIDAR
+                    scans from Argo AI's dataset. Transformed point clouds
+                    using iterative closest point (ICP) and applied pose graph
+                    optimization on resulting factor graphs.
+                </p>
+            </div>
+            <div class="skills">
+                <span>GTSAM</span>
+                <span>NumPy</span>
+            </div>
+
+            <h4>Localization Methods for Mobile Robots</h4>
+            <div class="project-body">
+                <img src="img/localization-methods.png">
+                <p>
+                    Implemented techniques such as grid-based Markov, Monte
+                    Carlo (particle filter), and Kalman Filter localization.
+                    Studied the performance (accuracy and runtime) of the
+                    different approaches in a variety of indoor situations.
+                </p>
+            </div>
+            <div class="skills">
+                <span>GTSAM</span>
+                <span>NumPy</span>
+                <span>Plotly</span>
+            </div>
+
+            <h4>Robot Scavenger Hunt</h4>
+            <div class="project-body">
+                <img src="img/robot-scavenger-hunt.png">
+                <p>
+                    Simulated a differential drive robot in SE(2) and a
+                    quadcopter in SE(3) that use rapidly exploring random trees
+                    (RRTs) for path-planning and a LeNet-inspired convolutional
+                    neural network for identifying visual clues in unknown
+                    environments.
+                </p>
+            </div>
+            <div class="skills">
+                <span>PyTorch</span>
+                <span>GTSAM</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+            </div>
+
+            <h4>RoboGenius</h4>
+            <div class="project-body">
+                <img src="img/robogenius.png">
+                <p>
+                    Co-founded a high school robotics team and served as the
+                    lead programmer. Won Champions Award at FIRST Tech Challenge
+                    India, and ranked 2nd out of 22,000+ teams from 58 countries
+                    at the World Robot Olympiad.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Java</span>
+                <span>OpenCV</span>
+                <span>LabVIEW</span>
+            </div>
+
+            <h2>Software Development</h2>
+
+            <h4>PowerUP</h4>
+            <div class="project-body">
+                <img src="img/powerup.png">
+                <p>
+                    Developed a tower defense game for both desktop and mobile
+                    with customizable maps, moving enemies, and pick-and-place
+                    towers. Voted Best Project in Georgia Tech's <em>CS 2340:
+                    Objects and Design</em> out of 100+ submissions.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Android</span>
+                <span>JavaFX</span>
+                <span>TestFX</span>
+                <span>CSS</span>
+            </div>
+
+            <h4>HiveStorm</h4>
+            <div class="project-body">
+                <img src="img/hivestorm.png">
+                <p>
+                    Created a brick breaker game for the Nintendo Gameboy
+                    Advance. Added support for 2D motion calculations and
+                    collision detection. Used Direct Memory Access to avoid
+                    screen tearing due to the console's graphics limitations.
+                </p>
+            </div>
+            <div class="skills">
+                <span>C</span>
+                <span>Mednafen</span>
+                <span>nin10kit</span>
+            </div>
+
+            <h4>IdeateFX</h4>
+            <div class="project-body">
+                <img src="img/ideatefx.png">
+                <p>
+                    Published a multi-platform app to accelerate brainstorming,
+                    categorizing, and sorting started up ideas based on
+                    feasibility metrics. Added features such as file
+                    import/export, detection of unsaved progress before closing,
+                    and more.
+                </p>
+            </div>
+            <div class="skills">
+                <span>JavaFX</span>
+                <span>CSS</span>
+            </div>
+
+            <h4>Odyssey</h4>
+            <div class="project-body">
+                <img src="img/odyssey.png">
+                <p>
+                    Launched an online platform to host India's first
+                    quest-based cryptic hunt. Built using Django with Heroku
+                    for PaaS and Cloudflare for CDN. Reached 250+ participants
+                    and 10,000+ answer submissions over the course of 3 days.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Django</span>
+                <span>PostgreSQL</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <h2>Systems & Networking</h2>
+
+            <h4>Virtual Memory and Process Scheduling Simulations</h4>
+            <div class="project-body">
+                <img src="img/virtual-memory-process-scheduling.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>C</span>
+                <span>Linux</span>
+                <span>Docker</span>
+            </div>
+
+            <h4>Reliable Transfer Protocol Implementation</h4>
+            <div class="project-body">
+                <img src="img/reliable-transfer-protocol.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>C</span>
+                <span>Docker</span>
+            </div>
+
+            <h4>Peer-to-Peer File Transfer System</h4>
+            <div class="project-body">
+                <img src="img/peer-to-peer-file-transfer.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Python</span>
+                <span>socket</span>
+            </div>
+
+            <h4>Chat Application Server</h4>
+            <div class="project-body">
+                <img src="img/chat-application-server.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Python</span>
+                <span>socket</span>
+            </div>
+
+            <h2>Digital Design</h2>
+
+            <h4>Intel Cyclone-V Direct Digital Synthesis Peripheral</h4>
+            <div class="project-body">
+                <img src="img/direct-digital-synthesis.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>VHDL</span>
+                <span>Assembly</span>
+            </div>
+
+            <h4>Little Computer 22-A (Pipelined)</h4>
+            <div class="project-body">
+                <img src="img/little-computer-pipelined.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>Logisim</span>
+                <span>Assembly</span>
+            </div>
+
+            <h4>Train Set Simulator</h4>
+            <div class="project-body">
+                <img src="img/train-set-simulator.png">
+                <p>
+                    To Do.
+                </p>
+            </div>
+            <div class="skills">
+                <span>VHDL</span>
+            </div>
+
+            <h2>In Progress</h2>
+            <p>
+                Edit about text and add photo<br>
+                Add project links and descriptions<br>
+                Minimize sections and allow for easier navigation<br>
+                Highlight key words across website<br>
+            </p>
+        </article>
+    </main>
+
+    <button id="dark-mode-toggle">
+        <i id="dark-mode-toggle-icon" class="fas fa-sun"></i>
+    </button>
+</body>
+
+<script>
+    document
+        .querySelector("#dark-mode-toggle")
+        .addEventListener('click', () => {
+            document.body.classList.toggle("latex-dark");
+            document.getElementById("dark-mode-toggle-icon").classList.toggle("fa-sun");
+            document.getElementById("dark-mode-toggle-icon").classList.toggle("fa-moon");
+            if (document.body.classList.contains("latex-dark")) {
+                localStorage.setItem("dark-mode", "latex-dark");
+            } else {
+                localStorage.setItem("dark-mode", "");
+            }
+        });
+
+    document
+        .addEventListener("DOMContentLoaded", function (event) {
+            var dark_mode = localStorage.getItem("dark-mode");
+            if (dark_mode) {
+                document.body.classList.toggle(dark_mode);
+                document.getElementById("dark-mode-toggle-icon").classList.toggle("fa-sun");
+                document.getElementById("dark-mode-toggle-icon").classList.toggle("fa-moon");
+            }
+        });
+</script>
+
 </html>
