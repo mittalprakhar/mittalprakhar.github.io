@@ -28,6 +28,10 @@ p {
     }
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 i.fa {
     color: hsl(0, 6%, 10%);
     margin-right: 10px;
