@@ -58,6 +58,10 @@ i.fa-calendar:hover {
     color: #d34f38;
 }
 
+a:focus {
+    outline: 0;
+}
+
 .experience-header {
     display: flex;
     margin: 0;
